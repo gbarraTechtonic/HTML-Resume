@@ -1,0 +1,36 @@
+/*
+======================
+CSS RESET
+======================
+ */
+
+ *,
+ *:before,
+ *:after {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+ }
+
+
+
+/*
+======================
+ RESUME HEADER AREA
+======================
+*/
+.resume-name {
+  font-size: 2rem;
+}
+
+.address-street, .phone {
+  list-style:none;
+}
+
+.area:before, .email:before {
+    content:"• ";
+}
+
+/* span .area, .email {
+  list-style: disc;
+} */
