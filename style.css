@@ -19,18 +19,34 @@ CSS RESET
  RESUME HEADER AREA
 ======================
 */
-.resume-name {
-  font-size: 2rem;
+
+.resume-header {
+  margin: 3rem 0rem 3rem 2.5rem;
 }
 
-.address-street, .phone {
+.resume-name {
+  /* default page px value is 16px */
+  font-size: 1.8rem;
+}
+
+.header-list li{
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.address-street,
+.phone {
   list-style:none;
 }
 
-.area:before, .email:before {
+.area:before,
+.email:before {
+  /* pseudo-selector to add bullet point before area/email */
     content:"• ";
 }
 
-/* span .area, .email {
-  list-style: disc;
-} */
+/*
+======================
+ EDUCATION
+======================
+*/
