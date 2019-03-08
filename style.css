@@ -1,0 +1,226 @@
+/*
+======================
+CSS RESET
+======================
+ */
+
+ *,
+ *:before,
+ *:after {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+ }
+
+ .clearfix: after,
+ .clearfix: after
+ {
+ content: "";
+ display: table;
+ clear: both;
+ }
+
+/*
+======================
+ FONT FAMILY
+======================
+*/
+
+* {
+font-family: 'Roboto', sans-serif;
+}
+
+/*
+======================
+ RESUME BODY
+======================
+*/
+
+.resume-body {
+  padding:.5rem 2.2rem;
+  /* set parent element container */
+  position:relative;
+}
+
+
+/*
+======================
+ RESUME HEADER AREA
+======================
+*/
+
+.resume-header {
+  margin: 3.3rem 0rem 3.3rem 1.4rem;
+}
+
+.resume-name {
+  /* default page px value is 16px */
+  font-size: 1.8rem;
+  padding-bottom: .6rem;
+}
+
+.header-list li{
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.address-street,
+.phone {
+  list-style:none;
+}
+
+.area:before,
+.email:before {
+  /* pseudo-selector to add bullet point before area/email */
+    content:"• ";
+}
+
+
+/*
+======================
+ OTHER SECTION HEADERS / MULTIPLE ELEMENT SELECTORS (FOR DRY)
+======================
+*/
+
+.education h4,
+.experience h4,
+.skills h4{
+  font-size: 1.2rem;
+  margin: 0 0 0 1.4rem;
+  padding-bottom: .3rem;
+}
+
+
+hr.bold {
+  border: .09735rem solid grey;
+}
+
+
+/*
+======================
+ EDUCATION
+======================
+*/
+
+
+.education-content {
+    margin: 0 0 0 -1rem;
+    display: inline-block;
+  }
+
+.education-content .college-1
+{
+  margin-bottom:2rem;
+}
+
+.extra-info-1 {
+  margin-bottom:2rem;
+}
+
+.extra-info {
+  margin-right: 4.5rem;
+  float: right;
+}
+
+section.education {
+
+  padding: 0 0 3rem;
+}
+
+section.education p {
+  margin: 1rem 0 0 2.5rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+
+section.education p span.right-alignment {
+  margin: 0 1rem 0 0;
+  float:right;
+}
+
+
+/*
+======================
+ EXPERIENCE
+======================
+*/
+
+.work{
+  margin: 0 0 0 -1rem;
+  display: inline-block;
+  font-size:.9rem;
+  /* padding: 1rem 0; */
+}
+
+.work-1 p:first-child,
+.work-2 p:first-child {
+  font-weight: 600;
+}
+
+
+.work-1 p:nth-child(2),
+.work-2 p:nth-child(2) {
+  /* selects 2nd child of parent p */
+  font-style: italic;
+}
+
+.work-1-info > p,
+.work-2-info > p{
+  margin: 1rem 0 0 2.5rem;
+}
+
+.work-1-info,
+.work-2-info {
+  display:inline-block;
+}
+.work-1-info-extra,
+.work-2-info-extra {
+  float:right;
+  margin-right: -2.6rem;
+}
+
+.work-1-info-extra > p,
+.work-2-info-extra > p {
+  margin-top: 1rem
+}
+
+section.experience {
+  padding: 0 0 3rem;
+}
+
+.bold-date {
+  font-weight:500;
+}
+
+.work-1-tasks,
+.work-2-tasks {
+  margin-top: 1rem;
+  margin-left:5rem;
+}
+
+.work-desc .desc {
+  margin-bottom: 1rem;
+}
+/*
+======================
+ SKILLS
+======================
+*/
+
+.skills {
+  padding-bottom: 2rem;
+}
+
+.skillset {
+  margin-top: 1rem;
+  font-size:.9rem;
+  margin-left: 1rem;
+}
+
+.skillset > p {
+  margin-top: 1rem;
+}
+
+.bold-skill {
+  font-weight:600;
+}
