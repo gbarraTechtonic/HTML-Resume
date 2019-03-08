@@ -12,6 +12,27 @@ CSS RESET
    padding: 0;
  }
 
+/*
+======================
+ FONT FAMILY
+======================
+*/
+
+* {
+font-family: 'Roboto', sans-serif;
+}
+
+/*
+======================
+ RESUME BODY
+======================
+*/
+
+.resume-body {
+  padding:.5rem 2.2rem;
+  /* set parent element container */
+  position:relative;
+}
 
 
 /*
@@ -21,12 +42,13 @@ CSS RESET
 */
 
 .resume-header {
-  margin: 3rem 0rem 3rem 2.5rem;
+  margin: 3.3rem 0rem 3.3rem 2.5rem;
 }
 
 .resume-name {
   /* default page px value is 16px */
   font-size: 1.8rem;
+  padding-bottom: .6rem;
 }
 
 .header-list li{
@@ -45,8 +67,46 @@ CSS RESET
     content:"• ";
 }
 
+
+/*
+======================
+ OTHER SECTION HEADERS / MULTIPLE ELEMENT SELECTORS
+======================
+*/
+
+.education h4,
+.experience h4,
+.skills h4{
+  font-size: 1.2rem;
+  margin: 0 0 0 2.5rem;
+  padding-bottom: .3rem;
+}
+
+section p {
+  margin: 0 0 0 2.5rem;
+}
+
+section li.desc {
+  margin: 0 0 0 2.5rem;
+}
+
+
 /*
 ======================
  EDUCATION
 ======================
 */
+
+section.education {
+  padding: 2.5rem 0 3rem;
+}
+
+
+span.right-alignment {
+  /* aligns dates and and extra information  */
+
+  /* position:absolute;
+  right: 2rem; */
+
+  float:right;
+}
