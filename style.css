@@ -42,7 +42,7 @@ font-family: 'Roboto', sans-serif;
 */
 
 .resume-header {
-  margin: 3.3rem 0rem 3.3rem 2.5rem;
+  margin: 3.3rem 0rem 3.3rem 1.4rem;
 }
 
 .resume-name {
@@ -78,16 +78,23 @@ font-family: 'Roboto', sans-serif;
 .experience h4,
 .skills h4{
   font-size: 1.2rem;
-  margin: 0 0 0 2.5rem;
+  margin: 0 0 0 1.4rem;
   padding-bottom: .3rem;
 }
 
-section p {
+
+/* section p {
   margin: 0 0 0 2.5rem;
+} */
+
+
+hr.bold {
+  border: .09735rem solid grey;
 }
 
-section li.desc {
-  margin: 0 0 0 2.5rem;
+.extra-info {
+  float:right
+
 }
 
 
@@ -97,15 +104,52 @@ section li.desc {
 ======================
 */
 
+
+.education-content {
+    margin: 0 0 0 -1rem;
+    display: inline-block;
+  }
+
+.education-content .college-1
+{
+  margin-bottom:2rem;
+}
+
+.extra-info-1 {
+  margin-bottom:2rem;
+}
+
+.extra-info {
+  margin-right: 4.5rem;
+}
+
 section.education {
-  padding: 2.5rem 0 3rem;
+
+  padding: 0 0 3rem;
 }
 
 section.education p {
   margin: 1rem 0 0 2.5rem;
+  font-weight: 600;
+  font-size: .9rem;
 }
 
 section.education p span.right-alignment {
   margin: 0 1rem 0 0;
   float:right;
 }
+
+/*
+======================
+ EXPERIENCE
+======================
+*/
+
+
+
+
+/*
+======================
+ SKILLS
+======================
+*/
