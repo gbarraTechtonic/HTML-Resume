@@ -206,3 +206,21 @@ section.experience {
  SKILLS
 ======================
 */
+
+.skills {
+  padding-bottom: 2rem;
+}
+
+.skillset {
+  margin-top: 1rem;
+  font-size:.9rem;
+  margin-left: 1rem;
+}
+
+.skillset > p {
+  margin-top: 1rem;
+}
+
+.bold-skill {
+  font-weight:600;
+}
