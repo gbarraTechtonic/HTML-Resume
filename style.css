@@ -12,6 +12,14 @@ CSS RESET
    padding: 0;
  }
 
+ .clearfix: after,
+ .clearfix: after
+ {
+ content: "";
+ display: table;
+ clear: both;
+ }
+
 /*
 ======================
  FONT FAMILY
@@ -70,7 +78,7 @@ font-family: 'Roboto', sans-serif;
 
 /*
 ======================
- OTHER SECTION HEADERS / MULTIPLE ELEMENT SELECTORS
+ OTHER SECTION HEADERS / MULTIPLE ELEMENT SELECTORS (FOR DRY)
 ======================
 */
 
@@ -83,18 +91,8 @@ font-family: 'Roboto', sans-serif;
 }
 
 
-/* section p {
-  margin: 0 0 0 2.5rem;
-} */
-
-
 hr.bold {
   border: .09735rem solid grey;
-}
-
-.extra-info {
-  float:right
-
 }
 
 
@@ -121,6 +119,7 @@ hr.bold {
 
 .extra-info {
   margin-right: 4.5rem;
+  float: right;
 }
 
 section.education {
@@ -139,15 +138,69 @@ section.education p span.right-alignment {
   float:right;
 }
 
+
 /*
 ======================
  EXPERIENCE
 ======================
 */
 
+.work{
+  margin: 0 0 0 -1rem;
+  display: inline-block;
+  font-size:.9rem;
+  /* padding: 1rem 0; */
+}
+
+.work-1 p:first-child,
+.work-2 p:first-child {
+  font-weight: 600;
+}
 
 
+.work-1 p:nth-child(2),
+.work-2 p:nth-child(2) {
+  /* selects 2nd child of parent p */
+  font-style: italic;
+}
 
+.work-1-info > p,
+.work-2-info > p{
+  margin: 1rem 0 0 2.5rem;
+}
+
+.work-1-info,
+.work-2-info {
+  display:inline-block;
+}
+.work-1-info-extra,
+.work-2-info-extra {
+  float:right;
+  margin-right: -2.6rem;
+}
+
+.work-1-info-extra > p,
+.work-2-info-extra > p {
+  margin-top: 1rem
+}
+
+section.experience {
+  padding: 0 0 3rem;
+}
+
+.bold-date {
+  font-weight:500;
+}
+
+.work-1-tasks,
+.work-2-tasks {
+  margin-top: 1rem;
+  margin-left:5rem;
+}
+
+.work-desc .desc {
+  margin-bottom: 1rem;
+}
 /*
 ======================
  SKILLS
