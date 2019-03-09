@@ -82,6 +82,8 @@ font-family: 'Roboto', sans-serif;
 ======================
 */
 
+/* HEADERS */
+
 .education h4,
 .experience h4,
 .skills h4{
@@ -90,11 +92,44 @@ font-family: 'Roboto', sans-serif;
   padding-bottom: .3rem;
 }
 
+/* HORIZONTAL RULER LINE */
 
 hr.bold {
   border: .09735rem solid grey;
 }
 
+/* EDUCATION SECTION (DRY)*/
+
+.education-content .college-1,
+.extra-info-1 {
+  margin-bottom:2rem;
+}
+
+/* EXPERIENCE */
+
+.work-1-info p:first-child,
+.work-1-info-extra p:first-child
+{
+  margin-bottom: 1rem;
+}
+
+/* FLOAT  (DRY) */
+section.education p span.right-alignment,
+.work-1-info-extra,
+.work-2-info-extra {
+  float:right;
+}
+
+
+/* FONT-WEIGHT BOLD (DRY) */
+
+p.company,
+p.bold-date,
+p.location,
+section.education p,
+span.bold-skill {
+  font-weight: 600;
+}
 
 /*
 ======================
@@ -102,19 +137,9 @@ hr.bold {
 ======================
 */
 
-
 .education-content {
-    margin: 0 0 0 -1rem;
-    display: inline-block;
-  }
-
-.education-content .college-1
-{
-  margin-bottom:2rem;
-}
-
-.extra-info-1 {
-  margin-bottom:2rem;
+  margin: 0 0 0 -1rem;
+  display: inline-block;
 }
 
 .extra-info {
@@ -129,30 +154,18 @@ section.education {
 
 section.education p {
   margin: 1rem 0 0 2.5rem;
-  font-weight: 600;
   font-size: .9rem;
 }
 
 section.education p span.right-alignment {
   margin: 0 1rem 0 0;
-  float:right;
 }
 
-p.company{
-  font-weight: 600;
-}
 
 p.job-title {
   font-style: italic;
 }
 
-p.location {
-  font-weight: 600;
-}
-
-p.bold-date {
-  font-weight: 600;
-}
 
 /*
 ======================
@@ -169,15 +182,6 @@ section.experience {
   margin: 1rem auto;
 }
 
-.work-1-info p:first-child{
-  /* first p nested in work-1-info class */
-  margin-bottom: 1rem;
-}
-/* combine */
-.work-1-info-extra p:first-child{
-  margin-bottom: 1rem;
-}
-
 .work-1 {
   margin-bottom: 1rem;
 }
@@ -188,7 +192,6 @@ section.experience {
 }
 
 .work-1-info-extra {
-  float:right;
   margin-right:6.2rem;
 }
 
@@ -206,12 +209,11 @@ section.experience {
 }
 
 .work-2-info-extra {
-  float:right;
   margin-right:5.3rem;
 }
 
-.work-2-info p:first-child{
-  /* first p nested in work-1-info class */
+.work-2-info p:first-child
+  /* first p nested in work-1-info class */{
   margin-bottom: 1rem;
 }
 /* combine */
@@ -241,8 +243,4 @@ section.experience {
 
 .skillset > p {
   margin-top: 1rem;
-}
-
-.bold-skill {
-  font-weight:600;
 }
