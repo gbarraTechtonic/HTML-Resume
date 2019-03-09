@@ -138,6 +138,21 @@ section.education p span.right-alignment {
   float:right;
 }
 
+p.company{
+  font-weight: 600;
+}
+
+p.job-title {
+  font-style: italic;
+}
+
+p.location {
+  font-weight: 600;
+}
+
+p.bold-date {
+  font-weight: 600;
+}
 
 /*
 ======================
@@ -145,65 +160,69 @@ section.education p span.right-alignment {
 ======================
 */
 
-.work{
-  margin: 0 0 0 -1rem;
-  display: inline-block;
-  font-size:.9rem;
-  /* padding: 1rem 0; */
-}
-
-.work-1 p:first-child,
-.work-2 p:first-child {
-  font-weight: 600;
-  margin: 1rem 0 0 2.5rem;
-
-}
-
-
-.work-1 p:nth-child(2),
-.work-2 p:nth-child(2) {
-  /* selects 2nd child of parent p */
-  font-style: italic;
-}
-
-
-.work-1-info,
-.work-2-info {
-  display:inline-block;
-}
-.work-1-info-extra,
-.work-2-info-extra {
-  margin-right: 4.5rem;
-  float:right;
-
-}
-
-.work-1-info-extra > p,
-.work-2-info-extra > p {
-  margin: 1rem 0 0 2.5rem;
-}
-
 section.experience {
-  padding: 0 0 3rem;
+  padding: 0 0 2rem;
+  font-size:0.9rem;
 }
 
-.bold-date {
-  font-weight:500;
+.work {
+  margin: 1rem auto;
 }
 
-.work-1-tasks,
-.work-2-tasks {
-  margin-top: 1rem;
-  margin-left:5rem;
-}
-
-.job-title {
-  margin: 1rem 0 0 2.5rem;
-}
-
-.work-desc .desc {
+.work-1-info p:first-child{
+  /* first p nested in work-1-info class */
   margin-bottom: 1rem;
 }
+/* combine */
+.work-1-info-extra p:first-child{
+  margin-bottom: 1rem;
+}
+
+.work-1 {
+  margin-bottom: 1rem;
+}
+
+.work-1-info{
+  display: inline-block;
+  margin-left: 1.5rem;
+}
+
+.work-1-info-extra {
+  float:right;
+  margin-right:6.2rem;
+}
+
+.desc {
+  margin-bottom: 1rem;
+}
+
+.work-2 {
+  margin-bottom: 1rem;
+}
+
+.work-2-info{
+  display: inline-block;
+  margin-left: 1.5rem;
+}
+
+.work-2-info-extra {
+  float:right;
+  margin-right:5.3rem;
+}
+
+.work-2-info p:first-child{
+  /* first p nested in work-1-info class */
+  margin-bottom: 1rem;
+}
+/* combine */
+.work-2-info-extra p:first-child{
+  margin-bottom: 1rem;
+}
+
+.work-desc {
+  margin-left:4rem;
+}
+
 /*
 ======================
  SKILLS
