@@ -82,6 +82,8 @@ font-family: 'Roboto', sans-serif;
 ======================
 */
 
+/* HEADERS */
+
 .education h4,
 .experience h4,
 .skills h4{
@@ -90,11 +92,44 @@ font-family: 'Roboto', sans-serif;
   padding-bottom: .3rem;
 }
 
+/* HORIZONTAL RULER LINE */
 
 hr.bold {
   border: .09735rem solid grey;
 }
 
+/* EDUCATION SECTION (DRY)*/
+
+.education-content .college-1,
+.extra-info-1 {
+  margin-bottom:2rem;
+}
+
+/* EXPERIENCE */
+
+.work-1-info p:first-child,
+.work-1-info-extra p:first-child
+{
+  margin-bottom: 1rem;
+}
+
+/* FLOAT  (DRY) */
+section.education p span.right-alignment,
+.work-1-info-extra,
+.work-2-info-extra {
+  float:right;
+}
+
+
+/* FONT-WEIGHT BOLD (DRY) */
+
+p.company,
+p.bold-date,
+p.location,
+section.education p,
+span.bold-skill {
+  font-weight: 600;
+}
 
 /*
 ======================
@@ -102,19 +137,9 @@ hr.bold {
 ======================
 */
 
-
 .education-content {
-    margin: 0 0 0 -1rem;
-    display: inline-block;
-  }
-
-.education-content .college-1
-{
-  margin-bottom:2rem;
-}
-
-.extra-info-1 {
-  margin-bottom:2rem;
+  margin: 0 0 0 -1rem;
+  display: inline-block;
 }
 
 .extra-info {
@@ -129,13 +154,16 @@ section.education {
 
 section.education p {
   margin: 1rem 0 0 2.5rem;
-  font-weight: 600;
   font-size: .9rem;
 }
 
 section.education p span.right-alignment {
   margin: 0 1rem 0 0;
-  float:right;
+}
+
+
+p.job-title {
+  font-style: italic;
 }
 
 
@@ -145,62 +173,58 @@ section.education p span.right-alignment {
 ======================
 */
 
-.work{
-  margin: 0 0 0 -1rem;
-  display: inline-block;
-  font-size:.9rem;
-  /* padding: 1rem 0; */
-}
-
-.work-1 p:first-child,
-.work-2 p:first-child {
-  font-weight: 600;
-}
-
-
-.work-1 p:nth-child(2),
-.work-2 p:nth-child(2) {
-  /* selects 2nd child of parent p */
-  font-style: italic;
-}
-
-.work-1-info > p,
-.work-2-info > p{
-  margin: 1rem 0 0 2.5rem;
-}
-
-.work-1-info,
-.work-2-info {
-  display:inline-block;
-}
-.work-1-info-extra,
-.work-2-info-extra {
-  float:right;
-  margin-right: -2.6rem;
-}
-
-.work-1-info-extra > p,
-.work-2-info-extra > p {
-  margin-top: 1rem
-}
-
 section.experience {
-  padding: 0 0 3rem;
+  padding: 0 0 2rem;
+  font-size:0.9rem;
 }
 
-.bold-date {
-  font-weight:500;
+.work {
+  margin: 1rem auto;
 }
 
-.work-1-tasks,
-.work-2-tasks {
-  margin-top: 1rem;
-  margin-left:5rem;
-}
-
-.work-desc .desc {
+.work-1 {
   margin-bottom: 1rem;
 }
+
+.work-1-info{
+  display: inline-block;
+  margin-left: 1.5rem;
+}
+
+.work-1-info-extra {
+  margin-right:6.2rem;
+}
+
+.desc {
+  margin-bottom: 1rem;
+}
+
+.work-2 {
+  margin-bottom: 1rem;
+}
+
+.work-2-info{
+  display: inline-block;
+  margin-left: 1.5rem;
+}
+
+.work-2-info-extra {
+  margin-right:5.3rem;
+}
+
+.work-2-info p:first-child
+  /* first p nested in work-1-info class */{
+  margin-bottom: 1rem;
+}
+/* combine */
+.work-2-info-extra p:first-child{
+  margin-bottom: 1rem;
+}
+
+.work-desc {
+  margin-left:4rem;
+}
+
 /*
 ======================
  SKILLS
@@ -219,8 +243,4 @@ section.experience {
 
 .skillset > p {
   margin-top: 1rem;
-}
-
-.bold-skill {
-  font-weight:600;
 }
